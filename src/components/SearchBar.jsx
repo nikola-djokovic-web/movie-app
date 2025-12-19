@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="text-white text-3xl">
       <div>
