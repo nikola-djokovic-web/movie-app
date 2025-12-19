@@ -1,4 +1,6 @@
-const Search = ({ searchTerm, setSearchTerm }) => {
+import React from "react";
+
+const SearchBar = () => {
   return (
     <div className="text-white text-3xl">
       <div>
@@ -19,4 +21,4 @@ const Search = ({ searchTerm, setSearchTerm }) => {
   );
 };
 
-export default Search;
+export default SearchBar;

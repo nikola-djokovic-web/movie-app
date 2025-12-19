@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDebounce } from "react-use";
-import Search from "./components/Search";
 import Spinner from "./components/Spinner";
+import SearchBar from "./components/SearchBar";
 import MovieCard from "./components/MovieCard";
 import { updateSearchCount, getTrendingMovies } from "./appwrite";
 
@@ -88,7 +88,7 @@ const App = () => {
             Find <span className="text-gradient">Movies</span> You'll Enjoy
             Without The Hassle
           </h1>
-          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
         <section className="trending-movies my-12">
           {trendingMovies.length > 0 && (
